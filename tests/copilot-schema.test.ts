@@ -2,7 +2,7 @@
  * Tests for the Copilot's structured-output contract.
  *
  * These need no API key and make no network calls: they check the boundary
- * between "whatever the model sent" and "what our code is allowed to act on".
+ * between "whatever the model sent" and "what our code is allowed to act on"
  * That boundary is the safety argument of the whole feature, so it is the part
  * most worth testing.
  */
