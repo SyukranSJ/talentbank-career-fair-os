@@ -7,7 +7,7 @@
 
 **[Open the live prototype](https://talentbank-career-fairs-orpin.vercel.app/)**
 
-EMAIL=events@talentbank.demo
+EMAIL=events@talentbank.demo <br>
 PASSWORD=TalentbankDemo.2026
 
 
