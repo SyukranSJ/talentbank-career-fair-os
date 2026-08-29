@@ -148,5 +148,5 @@ or reproduce the environment.
 Clone the repository and enter the project:
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/SyukranSJ/talentbank-career-fair-os.git>
 cd Talent
