@@ -7,6 +7,10 @@
 
 **[Open the live prototype](https://talentbank-career-fairs-orpin.vercel.app/)**
 
+EMAIL=events@talentbank.demo
+PASSWORD=TalentbankDemo.2026
+
+
 The live deployment is the recommended way to review the prototype. You can
 browse the public career-fair calendar, open event details, register for events,
 and explore the Talentbank events/admin workflow and AI Copilot.
