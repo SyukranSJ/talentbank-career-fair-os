@@ -1,7 +1,7 @@
 -- =====================================================================
 -- Talentbank Career Fair OS — COMPLETE DATABASE SETUP
 --
--- Paste this whole file into the Supabase SQL Editor and click Run.
+-- Paste this whole file into the Supabase SQL Editor and click Run
 -- It contains all three migrations, in order:
 --
 --   0001_schema.sql     tables, security rules, capacity safeguards
