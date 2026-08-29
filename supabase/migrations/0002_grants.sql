@@ -4,7 +4,7 @@
 -- Run this if you already ran 0001_schema.sql before the grants were
 -- added to it. Safe to run more than once; GRANT is idempotent.
 -- (0001_schema.sql now contains this same block, so a fresh project
---  only needs that one file.)
+--  only needs that one file)
 -- =====================================================================
 
 -- ---------------------------------------------------------------------
