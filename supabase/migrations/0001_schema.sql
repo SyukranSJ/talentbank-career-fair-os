@@ -1,7 +1,7 @@
 -- =====================================================================
 -- Talentbank Career Fair OS — schema
 -- Run this in the Supabase SQL Editor (or `supabase db push`).
--- Safe to re-run: every object is created with IF NOT EXISTS / OR REPLACE.
+-- Safe to re-run: every object is created with IF NOT EXISTS / OR REPLACE
 -- =====================================================================
 
 -- ---------------------------------------------------------------------
