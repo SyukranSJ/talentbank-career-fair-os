@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/* ===========================================================================
+   Talentbank Career Fair OS — design tokens
+
+   One palette, defined once. Every colour in the product is a token so the
+   whole thing can be re-skinned to match Talentbank's exact brand later
+   without hunting through components.
+   =========================================================================== */
+
+@theme {
+  /* Brand — a deep, institutional navy with a confident blue action colour.
+     Chosen to read as "national talent authority" rather than "startup". */
+  --color-ink-950: #05122b;
+  --color-ink-900: #0a1f42;
+  --color-ink-800: #12305e;
+  --color-ink-700: #1b4079;
+  --color-ink-600: #2456a0;
+
+  --color-brand-50:  #eef4ff;
+  --color-brand-100: #dbe6ff;
+  --color-brand-200: #bfd3ff;
+  --color-brand-300: #93b4ff;
+  --color-brand-400: #6089ff;
+  --color-brand-500: #3b63f6;
+  --color-brand-600: #2544eb;
+  --color-brand-700: #1d33d8;
+  --color-brand-800: #1e2caf;
+  --color-brand-900: #1e2b8a;
+
+  /* Copilot accent — a distinct violet so AI surfaces are instantly
+     recognisable as "assistive" and never confused with committed data. */
+  --color-copilot-50:  #f5f3ff;
+  --color-copilot-100: #ede9fe;
+  --color-copilot-200: #ddd6fe;
+  --color-copilot-300: #c4b5fd;
+  --color-copilot-400: #a78bfa;
+  --color-copilot-500: #8b5cf6;
+  --color-copilot-600: #7c3aed;
+  --color-copilot-700: #6d28d9;
+
+  /* Status colours. These carry meaning, so they are named for the meaning. */
+  --color-status-open:      #047857;
+  --color-status-open-bg:   #ecfdf5;
+  --color-status-open-line: #a7f3d0;
+
+  --color-status-full:      #b45309;
+  --color-status-full-bg:   #fffbeb;
+  --color-status-full-line: #fde68a;
+
+  --color-status-cancelled:      #b91c1c;
+  --color-status-cancelled-bg:   #fef2f2;
+  --color-status-cancelled-line: #fecaca;
+
+  --color-status-done:      #475569;
+  --color-status-done-bg:   #f8fafc;
+  --color-status-done-line: #e2e8f0;
+
+  --color-status-moved:      #6d28d9;
+  --color-status-moved-bg:   #f5f3ff;
+  --color-status-moved-line: #ddd6fe;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius-card: 0.875rem;
+}
+
+:root {
+  --background: #ffffff;
+  --surface: #ffffff;
+  --surface-muted: #f7f9fc;
+  --border: #e4e9f2;
+  --foreground: #0a1f42;
+  --muted-foreground: #5a6b87;
+}
+
+/* Deliberately light-only.
+   This is an internal operations tool and a public event calendar; the status
+   colour system (green/amber/red/grey) is the load-bearing visual language,
+   and maintaining a second palette that keeps those five states equally
+   distinguishable was not a good use of a three-day prototype. Documented as a
+   known limitation rather than half-implemented. */
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Visible keyboard focus everywhere, never removed. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+/* Respect users who ask for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@utility card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+}
